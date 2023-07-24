@@ -10,8 +10,8 @@ def addUser(request):
         username = request.POST['username']
         password = request.POST['password']
         UserManager.objects.create_user(email, username, password)
-        users = UserManager.objects.all()
-        context = {
-        'users': users,
-        }
-        return render(request, 'autentifikasi/listUsers.html', context)
+        # users = UserManager.objects.all()
+        # context = {
+        # 'users': users,
+        # }
+        # return render(request, 'autentifikasi/listUsers.html', context)
